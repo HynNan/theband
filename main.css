@@ -1,0 +1,59 @@
+body {
+    background-color: brown;
+    height: 100vh;
+    display: flex;
+}
+
+.pc,
+.taplet,
+.mobile {
+    font-size: 100px;
+    color: #fff;
+    margin: auto;
+    display: none;
+}
+
+@media only screen and (max-width: 46.1875em) {
+    .mobile {
+        display: block;
+        font-size: 200px
+    }
+    body {
+        background-color: yellow;
+    }
+}
+
+@media only screen and (min-width: 46.25em) and (max-width: 63.9375em) {
+    .taplet {
+        display: block;
+
+    }
+}
+
+@media only screen and (min-width: 64em) {
+    .pc {
+        display: block;
+        font-size: 50px;
+    }
+    body {
+        background-color: blue;
+
+    }
+}
+
+
+/* Chart layout */
+.chart-layout {
+    margin: 36px auto 0 auto;
+    padding: 32px 0;
+    height: 320px;
+    background-color: #fff;
+}
+
+.chart-layout__item {
+    width: 60px;
+    color: #fff;
+    text-align: center;
+    height: var(--percent);
+    background-color: #EF5122;
+}
